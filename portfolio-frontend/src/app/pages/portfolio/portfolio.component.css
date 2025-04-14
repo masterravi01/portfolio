@@ -7,7 +7,9 @@
   --text-color: #fff;
   --card-color: #262626;
 }
-
+.roundlogo {
+  width: 80px;
+}
 h1 span {
   color: #ff004f;
   position: relative;
@@ -336,6 +338,7 @@ nav ul li a:hover::after {
   text-decoration: none;
   color: var(--text-color);
   transition: background 0.5s;
+  cursor: pointer;
 }
 
 .seebtn:hover {
@@ -588,7 +591,18 @@ form .btn2 {
     margin-top: 20px;
   }
 }
-
+@media only screen and (max-width: 450px) {
+  .headertext {
+    margin-top: 20px;
+  }
+  .circle {
+    height: 50px;
+    width: 50px;
+  }
+  .roundlogo {
+    width: 50px;
+  }
+}
 @media only screen and (max-width: 420px) {
   .about-col-2 {
     width: 75%;
