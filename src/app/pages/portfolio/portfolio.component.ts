@@ -81,22 +81,22 @@ export class PortfolioComponent implements OnInit {
   works = [
     {
       header: 'HotelPro PMS',
-      desc: 'Built a comprehensive property management system (PMS) for the hospitality industry, enabling seamless reservations, front desk operations, billing, and real-time availability tracking. Integrated third-party booking platforms for enhanced connectivity and automated workflow management.',
+      desc: 'Developed a PMS for the hospitality industry with reservations, billing, real-time availability, and third-party booking integration for automated operations.',
       img: 'hotelprodash',
     },
     {
       header: 'EZY-HR Software',
-      desc: 'Designed and implemented a robust HR management system to streamline employee data management, payroll processing, attendance tracking, and performance evaluation. Integrated role-based access control and automated reporting for enhanced efficiency and compliance.',
+      desc: 'Built an HR management system with payroll, attendance, performance tracking, role-based access, and automated reporting for improved efficiency.',
       img: 'hr',
     },
     {
       header: 'Transport Desktop Software',
-      desc: 'Developed offline-capable desktop applications for various business needs, leveraging Electron.js and SQLite. Designed user-friendly interfaces with efficient data handling, ensuring smooth performance and data security across multiple operating system',
+      desc: 'Built cross-platform desktop apps using Electron.js and SQLite with offline support, smooth performance, and secure data handling.',
       img: 'alfadash',
     },
     {
       header: 'Footmate E-commerce Website',
-      desc: 'Crafted a versatile B2B and B2C e-commerce platform specialized for footwear, providing seamless shopping, personalized recommendations, and secure transactions',
+      desc: 'Crafted a B2B and B2C e-commerce platform specialized for footwear, providing shopping, recommendations and secure transactions',
       img: 'footmate',
     },
     {
@@ -202,6 +202,7 @@ export class PortfolioComponent implements OnInit {
       'https://www.facebook.com/profile.php?id=100041959655163&mibextid=ZbWKwL',
     cv: '/assets/Images/my-cv.pdf',
     name: 'Ravikumar Parmar',
+    github: 'https://github.com/masterravi01',
   };
   constructor(private elementRef: ElementRef, private renderer: Renderer2) {}
   ngOnInit(): void {
