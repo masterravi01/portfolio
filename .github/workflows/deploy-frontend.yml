@@ -37,9 +37,9 @@ jobs:
         run: |
           aws s3 sync dist/browser s3://${{ secrets.S3_BUCKET_NAME }} --delete
 
-     # ✅ CloudFront invalidation (IMPORTANT)
-    #  - name: Invalidate CloudFront Cache
-     #    run: |
-   #        aws cloudfront create-invalidation \
-   #          --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \
-   #          --paths "/*"
+      # ✅ CloudFront invalidation (IMPORTANT)
+      - name: Invalidate CloudFront Cache
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \
+            --paths "/*"
