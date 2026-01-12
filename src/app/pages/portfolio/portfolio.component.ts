@@ -212,7 +212,7 @@ export class PortfolioComponent implements OnInit {
     facebook:
       'https://www.facebook.com/profile.php?id=100041959655163&mibextid=ZbWKwL',
     cv: '/assets/Images/my-cv.pdf',
-    name: 'Ravikumar Parmar',
+    name: 'Ravi Parmar',
     github: 'https://github.com/masterravi01',
   };
 
