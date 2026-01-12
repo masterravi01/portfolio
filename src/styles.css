@@ -1,1 +1,82 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Light Mode (Soft Slate & Emerald) */
+  --color-primary: #059669;        /* emerald-600 */
+  --color-primary-hover: #047857;  /* emerald-700 */
+  --color-primary-dim: #d1fae5;    /* emerald-100 */
+  --color-secondary: #0891b2;      /* cyan-600 */
+  --color-secondary-hover: #0e7490;/* cyan-700 */
+  
+  --color-bg-default: #f1f5f9;     /* slate-100 */
+  --color-bg-surface: #ffffff;     /* white */
+  --color-bg-card: #ffffff;        /* white */
+  
+  --color-text-main: #0f172a;      /* slate-900 */
+  --color-text-muted: #475569;     /* slate-600 */
+  --color-text-inverted: #ffffff;  /* white */
+  
+  --color-border: #cbd5e1;         /* slate-300 */
+}
+
+.dark {
+  /* Dark Mode (Midnight Charcoal & Neon Emerald) */
+  --color-primary: #10b981;        /* emerald-500 -- Vibrant accent */
+  --color-primary-hover: #34d399;  /* emerald-400 */
+  --color-primary-dim: #064e3b;    /* emerald-900 */
+  
+  --color-secondary: #06b6d4;      /* cyan-500 */
+  --color-secondary-hover: #22d3ee;/* cyan-400 */
+
+  --color-bg-default: #0f172a;     /* slate-900 -- Deep background */
+  --color-bg-surface: #1e293b;     /* slate-800 -- Slightly lighter surface */
+  --color-bg-card: #1e293b;        /* slate-800 -- Card bg */
+  
+  --color-text-main: #f8fafc;      /* slate-50 */
+  --color-text-muted: #94a3b8;     /* slate-400 */
+  --color-text-inverted: #020617;  /* slate-950 */
+  
+  --color-border: #334155;         /* slate-700 */
+}
+
+/* Global Styles */
+body {
+  background-color: var(--color-bg-default);
+  color: var(--color-text-main);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg-default); 
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-text-muted); 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary); 
+}
+
+/* Utility to hide scrollbar for clean horizontal scrolling */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
